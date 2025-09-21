@@ -1,0 +1,95 @@
+*{
+   font-family: 'Tangerine', serif;
+}
+/* Styles personnalisés pour la scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #93c5fd;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #60a5fa;
+}
+
+/* Animation de typing */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+  .chat-container {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .test-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .test-buttons button {
+    width: 100%;
+  }
+}
+
+/* Effet de verre (glassmorphism) */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+/* Container principal avec hauteur fixe */
+.min-h-screen {
+  min-height: 100vh;
+}/* Supprimer la boîte blanche autour du chat */
+.chat-container {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 1rem !important; /* réduit un peu le padding sinon trop d’espace */
+}
+/* Bulles de messages → pleine largeur */
+.chat-container .flex > div {
+  max-width: 50% !important;  /* occupe toute la largeur */
+  width: 50% !important;
+  border-radius: 1rem !important; /* arrondi joli */
+  padding: 1.5rem !important;
+}
+
+/* Bulle utilisateur */
+.bg-blue-500 {
+  background-color: rgba(59, 130, 246, 0.9) !important;
+  color: white !important;
+  border-radius: 1rem !important;
+}
+
+/* Bulle assistant */
+.bg-green-100 {
+  background-color: rgba(209, 250, 229, 0.85) !important;
+  color: #1f2937 !important;
+  border-radius: 1rem !important;
+}
+
+/* Bulle erreur */
+.bg-red-100 {
+  background-color: rgba(254, 202, 202, 0.85) !important;
+  color: #7f1d1d !important;
+  border-radius: 1rem !important;
+}
