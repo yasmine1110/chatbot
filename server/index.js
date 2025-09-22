@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({ 
-  origin: ['https://chatbot-beta-liard.vercel.app/', 'https://chatbot-1utp.vercel.app/'],
+  origin: ['https://chatbot-beta-liard.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
