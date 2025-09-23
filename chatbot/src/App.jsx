@@ -123,14 +123,14 @@ function App() {
                   <div className="font-semibold mb-1 text-lg">
                     {msg.type === "user" ? "Vous" : "Assistant Médical"}
                   </div>
-                  <div className="text-sm">{msg.text}</div>
+                  <div className="text-lg">{msg.text}</div>
                 </div>
               </div>
             ))}
             
             {isLoading && (
-              <div className="flex justify-start">
-                <div className="bg-green-100 text-gray-800 p-4 rounded-2xl rounded-bl-none border border-green-200 max-w-xs lg:max-w-md xl:max-w-lg 2xl:max-w-xl">
+              <div className="flex justify-start text-lg">
+                <div className="bg-green-100 text-gray-800 p-4 rounded-2xl rounded-bl-none border border-green-200 max-w-xs lg:max-w-md xl:max-w-lg 2xl:max-w-xl text-lg">
                   <div className="font-semibold mb-1">Assistant Médical</div>
                   <div className="flex space-x-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-bounce"></div>
