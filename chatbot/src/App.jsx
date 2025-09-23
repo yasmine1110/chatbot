@@ -120,7 +120,7 @@ function App() {
                       : "bg-green-100 text-gray-800 border border-green-200 rounded-bl-none"
                   }`}
                 >
-                  <div className="font-semibold mb-1">
+                  <div className="font-semibold mb-1 text-lg">
                     {msg.type === "user" ? "Vous" : "Assistant Médical"}
                   </div>
                   <div className="text-sm">{msg.text}</div>
