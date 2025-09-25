@@ -175,26 +175,14 @@ app.post('/api/chat', async (req, res) => {
     });
 
     // Ajouter le contexte médical directement dans le prompt utilisateur
-    
-    console.log('✅ Génération de contenu démarrée');
-
-    // Stream de la réponse
-    for await (const chunk of result.stream) {
-      const chunkText = chunk.text();
-      if (chunkText) {
-        res.write(chunkText);
-      }
-    }
-        const enhancedPrompt = `
-
-Tu es un assistant médical expert.
+    const enhancedPrompt = `
+    Tu es un assistant médical expert.
 Règles strictes :
-- Réponds de façon brève (300 caractères au maximum).
+- Réponds de façon brève (600 caractères au maximum).
 - Donne seulement l'essentiel, clair et structuré.
 - Ne mets pas d'astérisques (*).
 - Si c'est une salutation (bonjour, salut, etc.), réponds poliment et simplement.
-Question : "${message}"
-`;
+ : "${message}"`;
 
     const result = await model.generateContentStream({
       contents: [{ 
@@ -205,10 +193,10 @@ Question : "${message}"
 
     console.log('✅ Génération de contenu démarrée');
 
+    // Stream de la réponse
     for await (const chunk of result.stream) {
-      let chunkText = chunk.text();
+      const chunkText = chunk.text();
       if (chunkText) {
-        chunkText = chunkText.replace(/\*/g, ''); // supprime les astérisques
         res.write(chunkText);
       }
     }
