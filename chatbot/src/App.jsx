@@ -103,7 +103,7 @@ function App() {
         
         <div 
           ref={chatContainerRef}
-          className="chat-container  rounded-xl p-20 my-6 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-transparent w-full min-w-screen min-h-screen items-center"
+          className="chat-container  rounded-xl p-20 my-6 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-transparent w-full items-center"
         >
         
           <div className="space-y-4 ">
