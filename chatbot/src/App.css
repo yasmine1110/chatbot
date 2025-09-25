@@ -69,8 +69,8 @@
 }
 /* Bulles de messages → pleine largeur */
 .chat-container .flex > div {
-  max-width: 50% !important;  /* occupe toute la largeur */
-  width: 50% !important;
+  max-width: 40% !important;  /* occupe toute la largeur */
+  width: 40% !important;
   border-radius: 1rem !important; /* arrondi joli */
   padding: 1.5rem !important;
 }
