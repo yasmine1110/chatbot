@@ -103,10 +103,10 @@ function App() {
         
         <div 
           ref={chatContainerRef}
-          className="chat-container  rounded-xl p-20 my-6 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-transparent"
+          className="chat-container  rounded-xl p-20 my-6 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-transparent w-full max-w-screen-sm "
         >
-        <div className='wesh'>
-          <div className="space-y-4">
+        
+          <div className="space-y-4 ">
             {chatLog.map((msg, i) => (
               <div
                 key={i}
@@ -132,7 +132,7 @@ function App() {
             
             {isLoading && (
               <div className="flex justify-start text-lg">
-                <div className="bg-green-100 text-gray-800 p-4 rounded-2xl rounded-bl-none border border-green-200 max-w-xs lg:max-w-md xl:max-w-lg 2xl:max-w-xl text-lg">
+                <div className="bg-green-100 text-gray-800  rounded-2xl rounded-bl-none border border-green-200 max-w-xs lg:max-w-md xl:max-w-lg 2xl:max-w-xl text-lg">
                   <div className="font-semibold mb-1">Assistant Médical</div>
                   <div className="flex space-x-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-bounce"></div>
@@ -144,7 +144,7 @@ function App() {
             )}
           </div>
           </div>
-        </div>
+       
 
         
 
