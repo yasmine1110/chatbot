@@ -58,8 +58,15 @@
 }
 
 /* Container principal avec hauteur fixe */
-
-
+.min-h-screen {
+  min-height: 100vh;
+}/* Supprimer la boîte blanche autour du chat */
+.chat-container {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  
+}
 /* Bulles de messages → pleine largeur */
 
 
