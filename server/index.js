@@ -178,10 +178,10 @@ app.post('/api/chat', async (req, res) => {
     const enhancedPrompt = `
     Tu es un assistant médical expert.
 Règles strictes :
-- Réponds de façon brève (600 caractères au maximum).
+- Réponds de façon brève mais bien detaillé.
 - Donne seulement l'essentiel, clair et structuré.
 - Ne mets pas d'astérisques (*).
-- Si c'est une salutation (bonjour, salut, etc.), réponds poliment et simplement.
+
  : "${message}"`;
 
     const result = await model.generateContentStream({

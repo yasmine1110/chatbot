@@ -105,13 +105,14 @@ function App() {
           ref={chatContainerRef}
           className="chat-container  rounded-xl p-20 my-6 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-transparent"
         >
-      
+        <div className='wesh'>
           <div className="space-y-4">
             {chatLog.map((msg, i) => (
               <div
                 key={i}
                 className={`flex ${msg.type === "user" ? "justify-end" : "justify-start"}`}
               >
+            
                 <div
                   className={`max-w-xs lg:max-w-md xl:max-w-lg 2xl:max-w-xl p-4 rounded-2xl shadow-md ${
                     msg.type === "user"
@@ -141,6 +142,7 @@ function App() {
                 </div>
               </div>
             )}
+          </div>
           </div>
         </div>
 
