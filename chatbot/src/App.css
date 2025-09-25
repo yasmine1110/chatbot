@@ -68,12 +68,7 @@
   padding: 1rem !important; /* réduit un peu le padding sinon trop d’espace */
 }
 /* Bulles de messages → pleine largeur */
-.chat-container .flex > div {
-  max-width: 40% !important;  /* occupe toute la largeur */
-  width: 40% !important;
-  border-radius: 1rem !important; /* arrondi joli */
-  padding: 1.5rem !important;
-}
+
 
 /* Bulle utilisateur */
 .bg-blue-500 {
