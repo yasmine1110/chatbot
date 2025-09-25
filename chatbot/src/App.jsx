@@ -131,7 +131,7 @@ function App() {
             ))}
             
             {isLoading && (
-              <div className="flex justify-start text-lg">
+              <div className="flex justify-start text-lg w-full max-w-screen-sm px-4 py-2 ">
                 <div className="bg-green-100 text-gray-800  rounded-2xl rounded-bl-none border border-green-200 max-w-xs lg:max-w-md xl:max-w-lg 2xl:max-w-xl text-lg">
                   <div className="font-semibold mb-1">Assistant Médical</div>
                   <div className="flex space-x-2">
