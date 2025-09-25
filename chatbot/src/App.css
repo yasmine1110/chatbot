@@ -65,7 +65,7 @@
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
-  
+  padding: 1rem !important; /* réduit un peu le padding sinon trop d’espace */
 }
 /* Bulles de messages → pleine largeur */
 
