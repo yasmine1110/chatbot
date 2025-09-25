@@ -180,8 +180,7 @@ app.post('/api/chat', async (req, res) => {
 Règles strictes :
 - Réponds de façon brève mais bien detaillé.
 - Donne seulement l'essentiel, clair et structuré.
-- Ne mets pas d'astérisques (*).
-
+- Ne mets pas d'astérisques (*) dans les reponses.
  : "${message}"`;
 
     const result = await model.generateContentStream({
