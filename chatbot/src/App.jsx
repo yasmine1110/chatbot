@@ -299,7 +299,7 @@ function App() {
                 className={`flex ${msg.type === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`w-fit max-w-[85%] sm:max-w-md lg:max-w-lg 2xl:max-w-2xl p-4 rounded-2xl shadow-md break-words ${
+                  className={`w-full p-4 rounded-2xl shadow-md ${
                     msg.type === "user"
                       ? "bg-blue-500 text-white rounded-br-none"
                       : msg.type === "error"
@@ -310,14 +310,14 @@ function App() {
                   <div className="font-semibold mb-1 text-base sm:text-lg">
                     {msg.type === "user" ? "Vous" : "Assistant Médical"}
                   </div>
-                  <div className="text-base sm:text-lg break-words">{msg.text}</div>
+                  <div className="text-base sm:text-lg">{msg.text}</div>
                 </div>
               </div>
             ))}
             
             {isLoading && (
               <div className="flex justify-start text-sm sm:text-lg">
-                <div className="bg-green-100 text-gray-800 p-4 rounded-2xl rounded-bl-none border border-green-200 w-fit max-w-[85%] sm:max-w-md lg:max-w-lg 2xl:max-w-2xl">
+                <div className="bg-green-100 text-gray-800 p-4 rounded-2xl rounded-bl-none border border-green-200 w-full">
                   <div className="font-semibold mb-1">Assistant Médical</div>
                   <div className="flex space-x-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-bounce"></div>
